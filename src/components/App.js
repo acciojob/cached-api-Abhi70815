@@ -21,10 +21,10 @@ const App = () => {
     <ul>
        {allData.map((data, index)=>{
         console.log(data)
-           return <li key={index}>
-             <h2>{data.title}</h2>
-             <p>{data.body}</p>
-            </li>
+           return data ? ( <li key={index}>
+           <h2>{data.title}</h2>
+           <p>{data.body}</p>
+          </li>) : (<p>...loading</p>) 
        })}
 
     </ul>
