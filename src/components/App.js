@@ -30,6 +30,7 @@ const App = () => {
         <p>Loading...</p>
       ) : (
         <ul>
+           <p>Loading...</p>
           {
             post.map((p) => (
               <li key={p.id}>
